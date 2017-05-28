@@ -1,1 +1,1 @@
-# textmaker_pres
+Files for the cookie seminar presentation.
