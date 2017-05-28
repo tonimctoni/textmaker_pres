@@ -49,7 +49,6 @@ void produce_with_wb(const char *wb_filename)
         return softmaxblock->get_output(i);
     };
 
-
     //Setup the char_to_index and index_to_char mappings
     const string index_to_char="! ')(-,.103254769;:?acbedgfihkjmlonqpsrutwvyxz";
     unordered_map<char, size_t> char_to_index;for(size_t i=0;i<index_to_char.size();i++) char_to_index[index_to_char[i]]=i;
