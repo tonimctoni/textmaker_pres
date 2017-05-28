@@ -12,7 +12,7 @@ using namespace std;
 int main()
 {
     const char *wb_filename="css_03_wb.wab";
-    static constexpr size_t output_length=2000;
+    static constexpr size_t output_length=4000;
 
     static constexpr size_t allowed_char_amount=72;
     static constexpr unsigned long input_size=allowed_char_amount;
@@ -62,8 +62,6 @@ int main()
     std::mt19937 gen(rd());
     std::uniform_int_distribution<size_t> dst_start(0,allowed_char_amount-1);
 
-
-
     X.set(dst_start(gen));
     for(size_t i=0;i<output_length;i++)
     {
@@ -72,5 +70,6 @@ int main()
         cout << index_to_char[new_char_index];
         X.set(new_char_index);
     }
+
     return 0;
 }
