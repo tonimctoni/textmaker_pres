@@ -100,7 +100,7 @@ $$f_w:\left[0,1\right]^n\longmapsto\left[0,1\right]^m$$
 \frametitle{The Input}
 \begin{itemize}
 \item<1-> The neural network is fed characters one at a time.
-\item<1-> For this, a mapping from characters to an array of zeros and ones of size N is needed.
+\item<1-> For this, a mapping from characters to an array of size N is needed.
 \item<1-> I used the \textit{one hot} method.
 \end{itemize}
 \end{frame}
@@ -110,7 +110,7 @@ $$f_w:\left[0,1\right]^n\longmapsto\left[0,1\right]^m$$
 \begin{itemize}
 \item<1-> If the input is one out of N characters, an array of size N is needed.
 \item<1-> Characters are numbered.
-\item<1-> Each element is represented by an array of one one an N-1 zeros, where the one is in the position of the characters number.
+\item<1-> Each element is represented by an array of one one an N-1 zeros, where the one is at the position of the characters number.
 \item<1-> Works not just for characters, but any set of distinct elements.
 \end{itemize}
 \end{frame}
@@ -227,246 +227,251 @@ $$f_w:\left[0,1\right]^n\longmapsto\left[0,1\right]^m$$
 \end{frame}
 %used a python script with mostly regex to find often occurrin errors
 
-\section{Input/Output Example}
+% \section{Input/Output Example}
+% \begin{frame}
+% \frametitle{Input/Output Example}
+% \begin{center}
+% \includegraphics[scale=0.4]{../distplot/00.png}
+% \end{center}
+% \end{frame}
+
+% \begin{frame}
+% \frametitle{Input/Output Example}
+% \begin{center}
+% \includegraphics[scale=0.4]{../distplot/01.png}
+% \end{center}
+% \end{frame}
+
+% \begin{frame}
+% \frametitle{Input/Output Example}
+% \begin{center}
+% \includegraphics[scale=0.4]{../distplot/02.png}
+% \end{center}
+% \end{frame}
+
+% \begin{frame}
+% \frametitle{Input/Output Example}
+% \begin{center}
+% \includegraphics[scale=0.4]{../distplot/03.png}
+% \end{center}
+% \end{frame}
+
+% \begin{frame}
+% \frametitle{Input/Output Example}
+% \begin{center}
+% \includegraphics[scale=0.4]{../distplot/04.png}
+% \end{center}
+% \end{frame}
+
+% \begin{frame}
+% \frametitle{Input/Output Example}
+% \begin{center}
+% \includegraphics[scale=0.4]{../distplot/05.png}
+% \end{center}
+% \end{frame}
+
+% \begin{frame}
+% \frametitle{Input/Output Example}
+% \begin{center}
+% \includegraphics[scale=0.4]{../distplot/06.png}
+% \end{center}
+% \end{frame}
+
+% \begin{frame}
+% \frametitle{Input/Output Example}
+% \begin{center}
+% \includegraphics[scale=0.4]{../distplot/07.png}
+% \end{center}
+% \end{frame}
+
+% \begin{frame}
+% \frametitle{Input/Output Example}
+% \begin{center}
+% \includegraphics[scale=0.4]{../distplot/08.png}
+% \end{center}
+% \end{frame}
+
+% \begin{frame}
+% \frametitle{Input/Output Example}
+% \begin{center}
+% \includegraphics[scale=0.4]{../distplot/09.png}
+% \end{center}
+% \end{frame}
+
+% \begin{frame}
+% \frametitle{Input/Output Example}
+% \begin{center}
+% \includegraphics[scale=0.4]{../distplot/10.png}
+% \end{center}
+% \end{frame}
+
+% \begin{frame}
+% \frametitle{Input/Output Example}
+% \begin{center}
+% \includegraphics[scale=0.4]{../distplot/11.png}
+% \end{center}
+% \end{frame}
+
+% \begin{frame}
+% \frametitle{Input/Output Example}
+% \begin{center}
+% \includegraphics[scale=0.4]{../distplot/12.png}
+% \end{center}
+% \end{frame}
+
+% \begin{frame}
+% \frametitle{Input/Output Example}
+% \begin{center}
+% \includegraphics[scale=0.4]{../distplot/13.png}
+% \end{center}
+% \end{frame}
+
+% \begin{frame}
+% \frametitle{Input/Output Example}
+% \begin{center}
+% \includegraphics[scale=0.4]{../distplot/14.png}
+% \end{center}
+% \end{frame}
+
+% \begin{frame}
+% \frametitle{Input/Output Example}
+% \begin{center}
+% \includegraphics[scale=0.4]{../distplot/15.png}
+% \end{center}
+% \end{frame}
+
+% \begin{frame}
+% \frametitle{Input/Output Example}
+% \begin{center}
+% \includegraphics[scale=0.4]{../distplot/16.png}
+% \end{center}
+% \end{frame}
+
+% \begin{frame}
+% \frametitle{Input/Output Example}
+% \begin{center}
+% \includegraphics[scale=0.4]{../distplot/17.png}
+% \end{center}
+% \end{frame}
+
+% \begin{frame}
+% \frametitle{Input/Output Example}
+% \begin{center}
+% \includegraphics[scale=0.4]{../distplot/18.png}
+% \end{center}
+% \end{frame}
+
+% \begin{frame}
+% \frametitle{Input/Output Example}
+% \begin{center}
+% \includegraphics[scale=0.4]{../distplot/19.png}
+% \end{center}
+% \end{frame}
+
+% \begin{frame}
+% \frametitle{Input/Output Example}
+% \begin{center}
+% \includegraphics[scale=0.4]{../distplot/20.png}
+% \end{center}
+% \end{frame}
+
+% \begin{frame}
+% \frametitle{Input/Output Example}
+% \begin{center}
+% \includegraphics[scale=0.4]{../distplot/21.png}
+% \end{center}
+% \end{frame}
+
+% \begin{frame}
+% \frametitle{Input/Output Example}
+% \begin{center}
+% \includegraphics[scale=0.4]{../distplot/22.png}
+% \end{center}
+% \end{frame}
+
+% \begin{frame}
+% \frametitle{Input/Output Example}
+% \begin{center}
+% \includegraphics[scale=0.4]{../distplot/23.png}
+% \end{center}
+% \end{frame}
+
+% \begin{frame}
+% \frametitle{Input/Output Example}
+% \begin{center}
+% \includegraphics[scale=0.4]{../distplot/24.png}
+% \end{center}
+% \end{frame}
+
+% \begin{frame}
+% \frametitle{Input/Output Example}
+% \begin{center}
+% \includegraphics[scale=0.4]{../distplot/25.png}
+% \end{center}
+% \end{frame}
+
+% \begin{frame}
+% \frametitle{Input/Output Example}
+% \begin{center}
+% \includegraphics[scale=0.4]{../distplot/26.png}
+% \end{center}
+% \end{frame}
+
+% \begin{frame}
+% \frametitle{Input/Output Example}
+% \begin{center}
+% \includegraphics[scale=0.4]{../distplot/27.png}
+% \end{center}
+% \end{frame}
+
+% \begin{frame}
+% \frametitle{Input/Output Example}
+% \begin{center}
+% \includegraphics[scale=0.4]{../distplot/28.png}
+% \end{center}
+% \end{frame}
+
+% \begin{frame}
+% \frametitle{Input/Output Example}
+% \begin{center}
+% \includegraphics[scale=0.4]{../distplot/29.png}
+% \end{center}
+% \end{frame}
+
+% \begin{frame}
+% \frametitle{Input/Output Example}
+% \begin{center}
+% \includegraphics[scale=0.4]{../distplot/30.png}
+% \end{center}
+% \end{frame}
+
+% \begin{frame}
+% \frametitle{Input/Output Example}
+% \begin{center}
+% \includegraphics[scale=0.4]{../distplot/31.png}
+% \end{center}
+% \end{frame}
+
+% \begin{frame}
+% \frametitle{Input/Output Example}
+% \begin{center}
+% \includegraphics[scale=0.4]{../distplot/32.png}
+% \end{center}
+% \end{frame}
+
+
+
+\section{Not the End}
 \begin{frame}
-\frametitle{Input/Output Example}
-\begin{center}
-\includegraphics[scale=0.4]{../distplot/00.png}
-\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Input/Output Example}
-\begin{center}
-\includegraphics[scale=0.4]{../distplot/01.png}
-\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Input/Output Example}
-\begin{center}
-\includegraphics[scale=0.4]{../distplot/02.png}
-\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Input/Output Example}
-\begin{center}
-\includegraphics[scale=0.4]{../distplot/03.png}
-\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Input/Output Example}
-\begin{center}
-\includegraphics[scale=0.4]{../distplot/04.png}
-\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Input/Output Example}
-\begin{center}
-\includegraphics[scale=0.4]{../distplot/05.png}
-\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Input/Output Example}
-\begin{center}
-\includegraphics[scale=0.4]{../distplot/06.png}
-\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Input/Output Example}
-\begin{center}
-\includegraphics[scale=0.4]{../distplot/07.png}
-\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Input/Output Example}
-\begin{center}
-\includegraphics[scale=0.4]{../distplot/08.png}
-\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Input/Output Example}
-\begin{center}
-\includegraphics[scale=0.4]{../distplot/09.png}
-\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Input/Output Example}
-\begin{center}
-\includegraphics[scale=0.4]{../distplot/10.png}
-\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Input/Output Example}
-\begin{center}
-\includegraphics[scale=0.4]{../distplot/11.png}
-\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Input/Output Example}
-\begin{center}
-\includegraphics[scale=0.4]{../distplot/12.png}
-\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Input/Output Example}
-\begin{center}
-\includegraphics[scale=0.4]{../distplot/13.png}
-\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Input/Output Example}
-\begin{center}
-\includegraphics[scale=0.4]{../distplot/14.png}
-\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Input/Output Example}
-\begin{center}
-\includegraphics[scale=0.4]{../distplot/15.png}
-\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Input/Output Example}
-\begin{center}
-\includegraphics[scale=0.4]{../distplot/16.png}
-\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Input/Output Example}
-\begin{center}
-\includegraphics[scale=0.4]{../distplot/17.png}
-\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Input/Output Example}
-\begin{center}
-\includegraphics[scale=0.4]{../distplot/18.png}
-\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Input/Output Example}
-\begin{center}
-\includegraphics[scale=0.4]{../distplot/19.png}
-\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Input/Output Example}
-\begin{center}
-\includegraphics[scale=0.4]{../distplot/20.png}
-\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Input/Output Example}
-\begin{center}
-\includegraphics[scale=0.4]{../distplot/21.png}
-\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Input/Output Example}
-\begin{center}
-\includegraphics[scale=0.4]{../distplot/22.png}
-\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Input/Output Example}
-\begin{center}
-\includegraphics[scale=0.4]{../distplot/23.png}
-\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Input/Output Example}
-\begin{center}
-\includegraphics[scale=0.4]{../distplot/24.png}
-\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Input/Output Example}
-\begin{center}
-\includegraphics[scale=0.4]{../distplot/25.png}
-\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Input/Output Example}
-\begin{center}
-\includegraphics[scale=0.4]{../distplot/26.png}
-\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Input/Output Example}
-\begin{center}
-\includegraphics[scale=0.4]{../distplot/27.png}
-\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Input/Output Example}
-\begin{center}
-\includegraphics[scale=0.4]{../distplot/28.png}
-\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Input/Output Example}
-\begin{center}
-\includegraphics[scale=0.4]{../distplot/29.png}
-\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Input/Output Example}
-\begin{center}
-\includegraphics[scale=0.4]{../distplot/30.png}
-\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Input/Output Example}
-\begin{center}
-\includegraphics[scale=0.4]{../distplot/31.png}
-\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Input/Output Example}
-\begin{center}
-\includegraphics[scale=0.4]{../distplot/32.png}
-\end{center}
-\end{frame}
-
-
-
-\section{End}
-\begin{frame}
-\frametitle{The end}
+\frametitle{Not yet the End}
 \begin{itemize}
+\item<1-> Show sample input/output.
 \item<1-> Show programs here if there is time.
 \end{itemize}
 \end{frame}
 
 \end{document}
+
+
+% title: Text Generation with LSTM Units
+% abstract: One of the cool things one can do with neural networks is making them learn from text in an unsupervised manner. The text could be English text, but it could also be any other kind of text, like for example source code. After learning, the neural network should be able to produce new text that is remarkably similar to the text which it learned from. The talk is about a project where this was experimented with.
