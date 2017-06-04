@@ -58,11 +58,12 @@ int main()
     unordered_map<char, size_t> char_to_index;for(size_t i=0;i<index_to_char.size();i++) char_to_index[index_to_char[i]]=i;
     assert(index_to_char.size()==allowed_char_amount and char_to_index.size()==allowed_char_amount);
     //Setup random generator and distributions
-    std::random_device rd;
-    std::mt19937 gen(rd());
-    std::uniform_int_distribution<size_t> dst_start(0,allowed_char_amount-1);
+    // std::random_device rd;
+    // std::mt19937 gen(rd());
+    // std::uniform_int_distribution<size_t> dst_start(0,allowed_char_amount-1);
 
-    X.set(dst_start(gen));
+    // X.set(dst_start(gen));
+    X.set(char_to_index[' ']);
     for(size_t i=0;i<output_length;i++)
     {
         auto &Y=calc_output(i);
